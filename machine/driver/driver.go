@@ -311,6 +311,8 @@ func (d *NutanixDriver) Create() error {
 
 	// CloudInit preparation
 
+	log.Infof("Cloud-Init (%s)", d.CloudInit)
+
 	var userdata []byte
 
 	if d.CloudInit != "" {
