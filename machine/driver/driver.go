@@ -309,6 +309,9 @@ func (d *NutanixDriver) Create() error {
 
 	log.Infof("SSH pub key ready (%s)", pubKey)
 
+	log.Infof("--debug--")
+	log.Infof("Cloud-Init : (%s)", d.CloudInit)
+
 	// CloudInit preparation
 
 	var userdata []byte
